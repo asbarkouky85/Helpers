@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monitor.UI", "Monitor.UI\Monitor.UI.csproj", "{E373B629-712F-4B5E-9C3A-EA5012705571}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Monitor.Api", "Monitor.Api\Monitor.Api.csproj", "{A99DC6C8-EFC5-437E-8907-9756BB012742}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E373B629-712F-4B5E-9C3A-EA5012705571}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E373B629-712F-4B5E-9C3A-EA5012705571}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E373B629-712F-4B5E-9C3A-EA5012705571}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E373B629-712F-4B5E-9C3A-EA5012705571}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A99DC6C8-EFC5-437E-8907-9756BB012742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A99DC6C8-EFC5-437E-8907-9756BB012742}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A99DC6C8-EFC5-437E-8907-9756BB012742}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A99DC6C8-EFC5-437E-8907-9756BB012742}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A3B71AB-D3D5-4D00-BE18-1CB55A594109}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://asga_tfs2:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Monitor.UI\\Monitor.UI.csproj
+		SccProjectName1 = Monitor.UI
+		SccLocalPath1 = Monitor.UI
+		SccProjectUniqueName2 = Monitor.Api\\Monitor.Api.csproj
+		SccProjectName2 = Monitor.Api
+		SccLocalPath2 = Monitor.Api
+	EndGlobalSection
+EndGlobal

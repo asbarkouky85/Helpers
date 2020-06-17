@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83C8E000-5018-4049-B0E4-EA5EFAAEB4DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CodeShell</RootNamespace>
+    <AssemblyName>CodeShell</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReportViewer.WebForms.12.0.2402.20\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=4.0.12.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.4.0.12\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cryptography\Secure.cs" />
+    <Compile Include="Data\Helpers\UtilityUnitContainer.cs" />
+    <Compile Include="Data\QueryMapper.cs" />
+    <Compile Include="Globalization\Extensions.cs" />
+    <Compile Include="Helpers\AttachmentHelper.cs" />
+    <Compile Include="Security\Authentication\JWTData.cs" />
+    <Compile Include="Security\Authorization\IAccessControlAuthorizationService.cs" />
+    <Compile Include="Security\Authorization\IAuthorizationService.cs" />
+    <Compile Include="Security\Sessions\TestSessionManager.cs" />
+    <Compile Include="Services\EmailService.cs" />
+    <Compile Include="Services\Email\SmtpConfig.cs" />
+    <Compile Include="Files\FileBytes.cs" />
+    <Compile Include="Files\FileData.cs" />
+    <Compile Include="Files\MimeData.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\IRoleRepository.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\IUserRepository.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\IRoleBasedAuthorizationUnit.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\ModelInterfaces.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\Models.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\RoleBasedAuthorizableUserRepositoryBase.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\RoleBasedAuthorizationEditService.cs" />
+    <Compile Include="Services\RoleBasedAuthorization\RoleBasedRoleRepositoryBase.cs" />
+    <Compile Include="Data\DataExtensions.cs" />
+    <Compile Include="Data\Helpers\ChangeResult.cs" />
+    <Compile Include="Data\Helpers\ChangeSet.cs" />
+    <Compile Include="Data\Helpers\EntityDeletable.cs" />
+    <Compile Include="Data\Helpers\GetOptions.cs" />
+    <Compile Include="Data\IEditable.cs" />
+    <Compile Include="Globalization\Strings.cs" />
+    <Compile Include="Security\Authentication\ActiveDirectoryAuthenticationService.cs" />
+    <Compile Include="Security\Authentication\DefaultAuthenticationService.cs" />
+    <Compile Include="Security\Authentication\DomainUser.cs" />
+    <Compile Include="Security\Authentication\IAuthenticationService.cs" />
+    <Compile Include="Security\Authentication\LoginModel.cs" />
+    <Compile Include="Security\Authorization\AuthorizationService.cs" />
+    <Compile Include="Security\Authorization\Permission.cs" />
+    <Compile Include="Security\DefaultIdentity.cs" />
+    <Compile Include="Security\DefaultPrincipal.cs" />
+    <Compile Include="Security\IIntAuthorizableUser.cs" />
+    <Compile Include="Security\IAuthorizableUser.cs" />
+    <Compile Include="Security\IStringAuthorizableUser.cs" />
+    <Compile Include="Security\IUserRepository.cs" />
+    <Compile Include="Security\Sessions\ISessionManager.cs" />
+    <Compile Include="Security\IUser.cs" />
+    <Compile Include="Security\Authentication\LoginResult.cs" />
+    <Compile Include="Security\Sessions\SessionManagerBase.cs" />
+    <Compile Include="Reporting\DeviceInfoXML.cs" />
+    <Compile Include="Reporting\ReportMaker.cs" />
+    <Compile Include="Reporting\ReportResult.cs" />
+    <Compile Include="Reporting\ReportTypes.cs" />
+    <Compile Include="Data\ChangeLists.cs" />
+    <Compile Include="Globalization\Language.cs" />
+    <Compile Include="Helpers\SW.cs" />
+    <Compile Include="Services\ServiceBase.cs" />
+    <Compile Include="Files\TmpFileData.cs" />
+    <Compile Include="Shell.cs" />
+    <Compile Include="Data\Collections\CollectionExtensions.cs" />
+    <Compile Include="Data\EntityFramework\RepositoryT.cs" />
+    <Compile Include="Data\EntityFramework\UnitOfWork.cs" />
+    <Compile Include="Data\ExpressionGenerator.cs" />
+    <Compile Include="Data\Helpers\Expressions.cs" />
+    <Compile Include="Data\Helpers\GetOptionsT.cs" />
+    <Compile Include="Data\Helpers\LoadOpts.cs" />
+    <Compile Include="Data\Helpers\LoadResult.cs" />
+    <Compile Include="Data\Helpers\SubmitResult.cs" />
+    <Compile Include="Data\IExpressionGenerator.cs" />
+    <Compile Include="Data\IModel.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Data\IRepositoryT.cs" />
+    <Compile Include="Data\IUnitOfWork.cs" />
+    <Compile Include="Data\PropertyFilter.cs" />
+    <Compile Include="Data\PropertyFilterT.cs" />
+    <Compile Include="Terminal\ConsoleTester.cs" />
+    <Compile Include="Text\Globalization\CurrencyInfo.cs" />
+    <Compile Include="Text\Globalization\NumberWordConverter.cs" />
+    <Compile Include="Text\Globalization\ToWord.cs" />
+    <Compile Include="Globalization\MessageIds.cs" />
+    <Compile Include="Text\StringExtensions.cs" />
+    <Compile Include="Tracer\Logger.cs" />
+    <Compile Include="Tracer\LogText.cs" />
+    <Compile Include="Tracer\SavingObjects.cs" />
+    <Compile Include="Tracer\TracerWriter.cs" />
+    <Compile Include="Types\Extensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangeLog.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

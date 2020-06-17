@@ -1,0 +1,21 @@
+﻿v1.2.0
+	- angular razor extensions
+v1.2.1
+	- logging exception on ApiExceptionFilterAttribute handler
+	- get language from header extention method
+v1.2.2
+	- added min max validator
+	- restrict alphanumeric validator
+v1.2.3
+	- added Basic to authentication header in CodeShell.Web.TokenSessionManager
+v1.2.4
+	- using auth-token in TokenSessionManager
+v1.2.5
+	- adding numeric text box to extensions
+v1.2.6
+	- making dateutilities static
+	- angular validators from annotations
+	- added login by id in token TokenAuthenticationService
+	- added web response conversion to LoginResult
+v1.2.7
+	- added Page() extension to HtmlHelper

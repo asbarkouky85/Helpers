@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.Api", "Gateway.Api\Gateway.Api.csproj", "{1B2584EE-487A-414B-B2C6-5C4AB467E15F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeShell", "CodeShell\CodeShell.csproj", "{83C8E000-5018-4049-B0E4-EA5EFAAEB4DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeShell.Web", "CodeShell.Web\CodeShell.Web.csproj", "{39AF2C56-4E37-40CE-92BF-C069F44C6D80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.Test.Api", "Gateway.Test.Api\Gateway.Test.Api.csproj", "{F0531C5A-AAD6-4DA3-9552-0369344C508C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B2584EE-487A-414B-B2C6-5C4AB467E15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B2584EE-487A-414B-B2C6-5C4AB467E15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B2584EE-487A-414B-B2C6-5C4AB467E15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B2584EE-487A-414B-B2C6-5C4AB467E15F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83C8E000-5018-4049-B0E4-EA5EFAAEB4DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83C8E000-5018-4049-B0E4-EA5EFAAEB4DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83C8E000-5018-4049-B0E4-EA5EFAAEB4DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83C8E000-5018-4049-B0E4-EA5EFAAEB4DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39AF2C56-4E37-40CE-92BF-C069F44C6D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39AF2C56-4E37-40CE-92BF-C069F44C6D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39AF2C56-4E37-40CE-92BF-C069F44C6D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39AF2C56-4E37-40CE-92BF-C069F44C6D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0531C5A-AAD6-4DA3-9552-0369344C508C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0531C5A-AAD6-4DA3-9552-0369344C508C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0531C5A-AAD6-4DA3-9552-0369344C508C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0531C5A-AAD6-4DA3-9552-0369344C508C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACA57E7B-24B9-40A1-B468-4E4049EF614A}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://asga_tfs2:8080/tfs/defaultcollection
+		SccProjectUniqueName0 = CodeShell\\CodeShell.csproj
+		SccProjectName0 = CodeShell
+		SccLocalPath0 = CodeShell
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Gateway.Api\\Gateway.Api.csproj
+		SccProjectName2 = Gateway.Api
+		SccLocalPath2 = Gateway.Api
+		SccProjectUniqueName3 = CodeShell.Web\\CodeShell.Web.csproj
+		SccProjectName3 = CodeShell.Web
+		SccLocalPath3 = CodeShell.Web
+		SccProjectUniqueName4 = Gateway.Test.Api\\Gateway.Test.Api.csproj
+		SccProjectName4 = Gateway.Test.Api
+		SccLocalPath4 = Gateway.Test.Api
+	EndGlobalSection
+EndGlobal

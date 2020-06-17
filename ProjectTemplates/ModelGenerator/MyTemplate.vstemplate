@@ -1,0 +1,32 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>.NET Core Model Generator</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ModelGenerator</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4547" />
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ModelGenerator.csproj" File="ModelGenerator.csproj" ReplaceParameters="true">
+      <Folder Name="Customization" TargetFolderName="Customization">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DBContextGenerator.cs">DBContextGenerator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DesignTimeServices.cs">DesignTimeServices.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="EntityGenerator.cs">EntityGenerator.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="FunctionRemover.cs">FunctionRemover.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Pluralizer.cs">Pluralizer.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName=".tfignore">.tfignore</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="BaseClasses.cs">BaseClasses.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Generate.bat">Generate.bat</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Generate_Domain.bat">Generate_Domain.bat</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

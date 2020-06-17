@@ -1,0 +1,47 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>App.Config.Api</Name>
+    <Description>Configuration api project</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Config.Api</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon Package="{AAB75614-2F8F-4DA6-B0A6-763C6DBB2969}" ID="4" />
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="MyProject.Config.Api.csproj" File="MyProject.Config.Api.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name=".vs" TargetFolderName=".vs" />
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="GenerationController.cs">GenerationController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SqlCommandsController.cs">SqlCommandsController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ViewsController.cs">ViewsController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="SQL" TargetFolderName="SQL">
+        <Folder Name="Scripts" TargetFolderName="Scripts">
+          <ProjectItem ReplaceParameters="true" TargetFileName="Creation.sql">Creation.sql</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="QueryBuilder_PageControls.sql">QueryBuilder_PageControls.sql</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="QueryBuilder_Pages.sql">QueryBuilder_Pages.sql</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="appEnvironments.json">appEnvironments.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ConfigShell.cs">ConfigShell.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+	  <ProjectItem ReplaceParameters="true" TargetFileName="run.bat">run.bat</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

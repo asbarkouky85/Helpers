@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <TypeScriptToolsVersion>3.2</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+<Version>2.9.0.0</Version>
+<AssemblyVersion>2.9.0.0</AssemblyVersion>
+<FileVersion>2.9.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Core\**" />
+    <Compile Remove="Logs\**" />
+    <Content Remove="Core\**" />
+    <Content Remove="Logs\**" />
+    <EmbeddedResource Remove="Core\**" />
+    <EmbeddedResource Remove="Logs\**" />
+    <None Remove="Core\**" />
+    <None Remove="Logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="tenantInfo.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="tenantInfo.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CodeShellCore.Web" Version="2.7.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="moldsterApps.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
