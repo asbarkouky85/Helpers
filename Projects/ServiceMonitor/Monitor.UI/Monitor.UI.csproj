@@ -25,7 +25,7 @@
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.UI" Version="2.2.35" />
     <PackageReference Include="CodeShellCore.Web" Version="2.9.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
   </ItemGroup>
 
 </Project>
